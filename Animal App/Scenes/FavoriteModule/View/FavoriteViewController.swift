@@ -1,5 +1,5 @@
 //
-//  AnimalPictureViewController.swift
+//  FavoriteViewController.swift
 //  Animal App
 //
 //  Created by Jeri Purnama Maulid on 12/01/24.
@@ -7,11 +7,7 @@
 
 import UIKit
 
-protocol IAnimalPictureViewController: AnyObject {
-    
-}
-
-class AnimalPictureViewController: UIViewController {
+class FavoriteViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 

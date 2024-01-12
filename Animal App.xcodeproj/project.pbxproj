@@ -35,11 +35,11 @@
 		13ED5BF62B5136C60000DBFB /* AnimalPictureInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13ED5BF52B5136C60000DBFB /* AnimalPictureInteractor.swift */; };
 		13ED5BF82B5136D20000DBFB /* AnimalPicturePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13ED5BF72B5136D20000DBFB /* AnimalPicturePresenter.swift */; };
 		13ED5BFA2B5136DE0000DBFB /* AnimalPictureRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13ED5BF92B5136DE0000DBFB /* AnimalPictureRouter.swift */; };
-		13ED5BFD2B5136EF0000DBFB /* FavotireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13ED5BFB2B5136EF0000DBFB /* FavotireViewController.swift */; };
-		13ED5BFE2B5136EF0000DBFB /* FavotireViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13ED5BFC2B5136EF0000DBFB /* FavotireViewController.xib */; };
-		13ED5C002B5136FD0000DBFB /* AnimalPictureInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13ED5BFF2B5136FD0000DBFB /* AnimalPictureInteractor.swift */; };
-		13ED5C022B5137070000DBFB /* AnimalPicturePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13ED5C012B5137070000DBFB /* AnimalPicturePresenter.swift */; };
-		13ED5C042B5137110000DBFB /* AnimalPictureRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13ED5C032B5137110000DBFB /* AnimalPictureRouter.swift */; };
+		13ED5BFD2B5136EF0000DBFB /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13ED5BFB2B5136EF0000DBFB /* FavoriteViewController.swift */; };
+		13ED5BFE2B5136EF0000DBFB /* FavoriteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13ED5BFC2B5136EF0000DBFB /* FavoriteViewController.xib */; };
+		13ED5C002B5136FD0000DBFB /* FavoriteInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13ED5BFF2B5136FD0000DBFB /* FavoriteInteractor.swift */; };
+		13ED5C022B5137070000DBFB /* FavoritePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13ED5C012B5137070000DBFB /* FavoritePresenter.swift */; };
+		13ED5C042B5137110000DBFB /* FavoritePictureRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13ED5C032B5137110000DBFB /* FavoritePictureRouter.swift */; };
 		6B56F1DD223E491B5C2E722F /* Pods_Animal_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0C7E089A5376D0036DFF754 /* Pods_Animal_App.framework */; };
 /* End PBXBuildFile section */
 
@@ -75,11 +75,11 @@
 		13ED5BF52B5136C60000DBFB /* AnimalPictureInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalPictureInteractor.swift; sourceTree = "<group>"; };
 		13ED5BF72B5136D20000DBFB /* AnimalPicturePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalPicturePresenter.swift; sourceTree = "<group>"; };
 		13ED5BF92B5136DE0000DBFB /* AnimalPictureRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalPictureRouter.swift; sourceTree = "<group>"; };
-		13ED5BFB2B5136EF0000DBFB /* FavotireViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavotireViewController.swift; sourceTree = "<group>"; };
-		13ED5BFC2B5136EF0000DBFB /* FavotireViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavotireViewController.xib; sourceTree = "<group>"; };
-		13ED5BFF2B5136FD0000DBFB /* AnimalPictureInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalPictureInteractor.swift; sourceTree = "<group>"; };
-		13ED5C012B5137070000DBFB /* AnimalPicturePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalPicturePresenter.swift; sourceTree = "<group>"; };
-		13ED5C032B5137110000DBFB /* AnimalPictureRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalPictureRouter.swift; sourceTree = "<group>"; };
+		13ED5BFB2B5136EF0000DBFB /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		13ED5BFC2B5136EF0000DBFB /* FavoriteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteViewController.xib; sourceTree = "<group>"; };
+		13ED5BFF2B5136FD0000DBFB /* FavoriteInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteInteractor.swift; sourceTree = "<group>"; };
+		13ED5C012B5137070000DBFB /* FavoritePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePresenter.swift; sourceTree = "<group>"; };
+		13ED5C032B5137110000DBFB /* FavoritePictureRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePictureRouter.swift; sourceTree = "<group>"; };
 		D0C7E089A5376D0036DFF754 /* Pods_Animal_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Animal_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D89E5319A6DFFE54C048B6D7 /* Pods-Animal App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Animal App.debug.xcconfig"; path = "Target Support Files/Pods-Animal App/Pods-Animal App.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -309,8 +309,8 @@
 		13ED5BED2B5134B40000DBFB /* View */ = {
 			isa = PBXGroup;
 			children = (
-				13ED5BFB2B5136EF0000DBFB /* FavotireViewController.swift */,
-				13ED5BFC2B5136EF0000DBFB /* FavotireViewController.xib */,
+				13ED5BFB2B5136EF0000DBFB /* FavoriteViewController.swift */,
+				13ED5BFC2B5136EF0000DBFB /* FavoriteViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -318,7 +318,7 @@
 		13ED5BEE2B5134BB0000DBFB /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
-				13ED5BFF2B5136FD0000DBFB /* AnimalPictureInteractor.swift */,
+				13ED5BFF2B5136FD0000DBFB /* FavoriteInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -326,7 +326,7 @@
 		13ED5BEF2B5134C30000DBFB /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				13ED5C012B5137070000DBFB /* AnimalPicturePresenter.swift */,
+				13ED5C012B5137070000DBFB /* FavoritePresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -334,7 +334,7 @@
 		13ED5BF02B5134D00000DBFB /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				13ED5C032B5137110000DBFB /* AnimalPictureRouter.swift */,
+				13ED5C032B5137110000DBFB /* FavoritePictureRouter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -416,7 +416,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13ED5BFE2B5136EF0000DBFB /* FavotireViewController.xib in Resources */,
+				13ED5BFE2B5136EF0000DBFB /* FavoriteViewController.xib in Resources */,
 				13ED5BAB2B4E81C20000DBFB /* LaunchScreen.storyboard in Resources */,
 				13ED5BA82B4E81C20000DBFB /* Assets.xcassets in Resources */,
 				13ED5BF42B5136B60000DBFB /* AnimalPictureViewController.xib in Resources */,
@@ -475,14 +475,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				13ED5BFA2B5136DE0000DBFB /* AnimalPictureRouter.swift in Sources */,
-				13ED5C022B5137070000DBFB /* AnimalPicturePresenter.swift in Sources */,
+				13ED5C022B5137070000DBFB /* FavoritePresenter.swift in Sources */,
 				13ED5BCC2B4E8D850000DBFB /* ImageSrc.swift in Sources */,
 				13ED5BF82B5136D20000DBFB /* AnimalPicturePresenter.swift in Sources */,
-				13ED5C002B5136FD0000DBFB /* AnimalPictureInteractor.swift in Sources */,
+				13ED5C002B5136FD0000DBFB /* FavoriteInteractor.swift in Sources */,
 				13ED5BD32B4E8E620000DBFB /* Extension+UITableView.swift in Sources */,
 				13ED5BF62B5136C60000DBFB /* AnimalPictureInteractor.swift in Sources */,
 				13ED5BCB2B4E8D850000DBFB /* AnimalCharacteristics.swift in Sources */,
-				13ED5BFD2B5136EF0000DBFB /* FavotireViewController.swift in Sources */,
+				13ED5BFD2B5136EF0000DBFB /* FavoriteViewController.swift in Sources */,
 				13ED5BE62B50FD9D0000DBFB /* ModuleConfigurator.swift in Sources */,
 				13ED5BA32B4E81C00000DBFB /* ViewController.swift in Sources */,
 				13ED5BBF2B4E84420000DBFB /* APIService.swift in Sources */,
@@ -490,7 +490,7 @@
 				13ED5BCF2B4E8D850000DBFB /* AnimalTaxonomy.swift in Sources */,
 				13ED5BCD2B4E8D850000DBFB /* ImageBaseModel.swift in Sources */,
 				13ED5BE02B50CCD60000DBFB /* ListOfAnimalRouter.swift in Sources */,
-				13ED5C042B5137110000DBFB /* AnimalPictureRouter.swift in Sources */,
+				13ED5C042B5137110000DBFB /* FavoritePictureRouter.swift in Sources */,
 				13ED5BA12B4E81C00000DBFB /* SceneDelegate.swift in Sources */,
 				13ED5BF32B5136B60000DBFB /* AnimalPictureViewController.swift in Sources */,
 				13ED5BD12B4E8E3B0000DBFB /* Extension+String.swift in Sources */,

@@ -6,3 +6,15 @@
 //
 
 import Foundation
+
+protocol IAnimalPictureInteractor: AnyObject {}
+
+class AnimalPictureInteractor: IAnimalPictureInteractor {
+    private let apiService: IAPIService
+    var presenter: IAnimalPicturePresenter
+
+    init(presenter: IAnimalPicturePresenter, apiService: IAPIService) {
+        self.presenter = presenter
+        self.apiService = apiService
+    }
+}
