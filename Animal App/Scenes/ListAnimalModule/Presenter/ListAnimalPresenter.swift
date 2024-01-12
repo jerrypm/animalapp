@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+protocol IListAnimalPresenter: AnyObject {}
+
+class ListAnimalPresenter: IListAnimalPresenter {
+    weak var view: IListAnimalViewController?
+}

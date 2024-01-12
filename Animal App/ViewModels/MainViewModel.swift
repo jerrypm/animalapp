@@ -6,3 +6,21 @@
 //
 
 import Foundation
+import SwiftyJSON
+
+class MainViewModel: NSObject {
+    private var apiService: APIService!
+
+    override init() {
+        super.init()
+        self.apiService = APIService()
+    }
+    
+    func fetchAnimalList() {
+        // here
+    }
+    
+    func fetchImageAnimal() {
+        // here
+    }
+}

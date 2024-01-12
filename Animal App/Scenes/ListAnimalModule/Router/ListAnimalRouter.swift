@@ -6,3 +6,12 @@
 //
 
 import Foundation
+
+protocol IListAnimalRouter: AnyObject {}
+
+class ListAnimalRouter: IListAnimalRouter {
+    
+    init() {
+        // here
+    }
+}

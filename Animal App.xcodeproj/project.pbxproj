@@ -13,9 +13,29 @@
 		13ED5BA62B4E81C00000DBFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13ED5BA42B4E81C00000DBFB /* Main.storyboard */; };
 		13ED5BA82B4E81C20000DBFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13ED5BA72B4E81C20000DBFB /* Assets.xcassets */; };
 		13ED5BAB2B4E81C20000DBFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13ED5BA92B4E81C20000DBFB /* LaunchScreen.storyboard */; };
+		13ED5BBC2B4E83980000DBFB /* ListAnimalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13ED5BBA2B4E83980000DBFB /* ListAnimalViewController.swift */; };
+		13ED5BBD2B4E83980000DBFB /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13ED5BBB2B4E83980000DBFB /* MainViewController.xib */; };
+		13ED5BBF2B4E84420000DBFB /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13ED5BBE2B4E84420000DBFB /* APIService.swift */; };
+		13ED5BC12B4E85E40000DBFB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13ED5BC02B4E85E40000DBFB /* Constants.swift */; };
+		13ED5BC32B4E87E50000DBFB /* AnimalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13ED5BC22B4E87E50000DBFB /* AnimalType.swift */; };
+		13ED5BCA2B4E8D850000DBFB /* ImagePhotos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13ED5BC42B4E8D840000DBFB /* ImagePhotos.swift */; };
+		13ED5BCB2B4E8D850000DBFB /* AnimalCharacteristics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13ED5BC52B4E8D840000DBFB /* AnimalCharacteristics.swift */; };
+		13ED5BCC2B4E8D850000DBFB /* ImageSrc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13ED5BC62B4E8D840000DBFB /* ImageSrc.swift */; };
+		13ED5BCD2B4E8D850000DBFB /* ImageBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13ED5BC72B4E8D840000DBFB /* ImageBaseModel.swift */; };
+		13ED5BCE2B4E8D850000DBFB /* AnimalBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13ED5BC82B4E8D850000DBFB /* AnimalBaseModel.swift */; };
+		13ED5BCF2B4E8D850000DBFB /* AnimalTaxonomy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13ED5BC92B4E8D850000DBFB /* AnimalTaxonomy.swift */; };
+		13ED5BD12B4E8E3B0000DBFB /* Extension+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13ED5BD02B4E8E3B0000DBFB /* Extension+String.swift */; };
+		13ED5BD32B4E8E620000DBFB /* Extension+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13ED5BD22B4E8E620000DBFB /* Extension+UITableView.swift */; };
+		13ED5BD52B4E8E940000DBFB /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13ED5BD42B4E8E940000DBFB /* MainViewModel.swift */; };
+		13ED5BDC2B50CB670000DBFB /* ListAnimalInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13ED5BDB2B50CB670000DBFB /* ListAnimalInteractor.swift */; };
+		13ED5BDE2B50CCC80000DBFB /* ListAnimalPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13ED5BDD2B50CCC80000DBFB /* ListAnimalPresenter.swift */; };
+		13ED5BE02B50CCD60000DBFB /* ListAnimalRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13ED5BDF2B50CCD60000DBFB /* ListAnimalRouter.swift */; };
+		13ED5BE22B50CD650000DBFB /* ListAnimalModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13ED5BE12B50CD650000DBFB /* ListAnimalModule.swift */; };
+		6B56F1DD223E491B5C2E722F /* Pods_Animal_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0C7E089A5376D0036DFF754 /* Pods_Animal_App.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F42122B53B1D71AFB4F011D /* Pods-Animal App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Animal App.release.xcconfig"; path = "Target Support Files/Pods-Animal App/Pods-Animal App.release.xcconfig"; sourceTree = "<group>"; };
 		13ED5B9B2B4E81C00000DBFB /* Animal App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Animal App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13ED5B9E2B4E81C00000DBFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13ED5BA02B4E81C00000DBFB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +44,26 @@
 		13ED5BA72B4E81C20000DBFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		13ED5BAA2B4E81C20000DBFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		13ED5BAC2B4E81C20000DBFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13ED5BBA2B4E83980000DBFB /* ListAnimalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListAnimalViewController.swift; sourceTree = "<group>"; };
+		13ED5BBB2B4E83980000DBFB /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		13ED5BBE2B4E84420000DBFB /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		13ED5BC02B4E85E40000DBFB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		13ED5BC22B4E87E50000DBFB /* AnimalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalType.swift; sourceTree = "<group>"; };
+		13ED5BC42B4E8D840000DBFB /* ImagePhotos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePhotos.swift; sourceTree = "<group>"; };
+		13ED5BC52B4E8D840000DBFB /* AnimalCharacteristics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalCharacteristics.swift; sourceTree = "<group>"; };
+		13ED5BC62B4E8D840000DBFB /* ImageSrc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageSrc.swift; sourceTree = "<group>"; };
+		13ED5BC72B4E8D840000DBFB /* ImageBaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageBaseModel.swift; sourceTree = "<group>"; };
+		13ED5BC82B4E8D850000DBFB /* AnimalBaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalBaseModel.swift; sourceTree = "<group>"; };
+		13ED5BC92B4E8D850000DBFB /* AnimalTaxonomy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalTaxonomy.swift; sourceTree = "<group>"; };
+		13ED5BD02B4E8E3B0000DBFB /* Extension+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+String.swift"; sourceTree = "<group>"; };
+		13ED5BD22B4E8E620000DBFB /* Extension+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UITableView.swift"; sourceTree = "<group>"; };
+		13ED5BD42B4E8E940000DBFB /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		13ED5BDB2B50CB670000DBFB /* ListAnimalInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListAnimalInteractor.swift; sourceTree = "<group>"; };
+		13ED5BDD2B50CCC80000DBFB /* ListAnimalPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListAnimalPresenter.swift; sourceTree = "<group>"; };
+		13ED5BDF2B50CCD60000DBFB /* ListAnimalRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListAnimalRouter.swift; sourceTree = "<group>"; };
+		13ED5BE12B50CD650000DBFB /* ListAnimalModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListAnimalModule.swift; sourceTree = "<group>"; };
+		D0C7E089A5376D0036DFF754 /* Pods_Animal_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Animal_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D89E5319A6DFFE54C048B6D7 /* Pods-Animal App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Animal App.debug.xcconfig"; path = "Target Support Files/Pods-Animal App/Pods-Animal App.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B56F1DD223E491B5C2E722F /* Pods_Animal_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +83,8 @@
 			children = (
 				13ED5B9D2B4E81C00000DBFB /* Animal App */,
 				13ED5B9C2B4E81C00000DBFB /* Products */,
+				16241FF10F6FC87AF999EF97 /* Pods */,
+				6620FE3BB5D1A4EABAE4630C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +99,11 @@
 		13ED5B9D2B4E81C00000DBFB /* Animal App */ = {
 			isa = PBXGroup;
 			children = (
+				13ED5BB72B4E83360000DBFB /* Common */,
+				13ED5BB62B4E83190000DBFB /* Services */,
+				13ED5BD62B50C9800000DBFB /* Scenes */,
+				13ED5BB52B4E81F80000DBFB /* Models */,
+				13ED5BB42B4E81EF0000DBFB /* ViewModels */,
 				13ED5B9E2B4E81C00000DBFB /* AppDelegate.swift */,
 				13ED5BA02B4E81C00000DBFB /* SceneDelegate.swift */,
 				13ED5BA22B4E81C00000DBFB /* ViewController.swift */,
@@ -67,6 +115,132 @@
 			path = "Animal App";
 			sourceTree = "<group>";
 		};
+		13ED5BB32B4E81E50000DBFB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				13ED5BBA2B4E83980000DBFB /* ListAnimalViewController.swift */,
+				13ED5BBB2B4E83980000DBFB /* MainViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		13ED5BB42B4E81EF0000DBFB /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				13ED5BD42B4E8E940000DBFB /* MainViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		13ED5BB52B4E81F80000DBFB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				13ED5BC82B4E8D850000DBFB /* AnimalBaseModel.swift */,
+				13ED5BC52B4E8D840000DBFB /* AnimalCharacteristics.swift */,
+				13ED5BC92B4E8D850000DBFB /* AnimalTaxonomy.swift */,
+				13ED5BC72B4E8D840000DBFB /* ImageBaseModel.swift */,
+				13ED5BC42B4E8D840000DBFB /* ImagePhotos.swift */,
+				13ED5BC62B4E8D840000DBFB /* ImageSrc.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		13ED5BB62B4E83190000DBFB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				13ED5BBE2B4E84420000DBFB /* APIService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		13ED5BB72B4E83360000DBFB /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				13ED5BB82B4E83400000DBFB /* Extensions */,
+				13ED5BB92B4E834A0000DBFB /* Utilities */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		13ED5BB82B4E83400000DBFB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				13ED5BD02B4E8E3B0000DBFB /* Extension+String.swift */,
+				13ED5BD22B4E8E620000DBFB /* Extension+UITableView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		13ED5BB92B4E834A0000DBFB /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				13ED5BC02B4E85E40000DBFB /* Constants.swift */,
+				13ED5BC22B4E87E50000DBFB /* AnimalType.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		13ED5BD62B50C9800000DBFB /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				13ED5BD72B50CA930000DBFB /* ListAnimalModule */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		13ED5BD72B50CA930000DBFB /* ListAnimalModule */ = {
+			isa = PBXGroup;
+			children = (
+				13ED5BDA2B50CAEC0000DBFB /* Router */,
+				13ED5BD92B50CAC80000DBFB /* Presenter */,
+				13ED5BD82B50CABA0000DBFB /* Interactor */,
+				13ED5BB32B4E81E50000DBFB /* View */,
+			);
+			path = ListAnimalModule;
+			sourceTree = "<group>";
+		};
+		13ED5BD82B50CABA0000DBFB /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				13ED5BDB2B50CB670000DBFB /* ListAnimalInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		13ED5BD92B50CAC80000DBFB /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				13ED5BDD2B50CCC80000DBFB /* ListAnimalPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		13ED5BDA2B50CAEC0000DBFB /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				13ED5BDF2B50CCD60000DBFB /* ListAnimalRouter.swift */,
+				13ED5BE12B50CD650000DBFB /* ListAnimalModule.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		16241FF10F6FC87AF999EF97 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D89E5319A6DFFE54C048B6D7 /* Pods-Animal App.debug.xcconfig */,
+				0F42122B53B1D71AFB4F011D /* Pods-Animal App.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6620FE3BB5D1A4EABAE4630C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D0C7E089A5376D0036DFF754 /* Pods_Animal_App.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +248,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13ED5BAF2B4E81C20000DBFB /* Build configuration list for PBXNativeTarget "Animal App" */;
 			buildPhases = (
+				2D08038E7D5BFAEB980B9AEE /* [CP] Check Pods Manifest.lock */,
 				13ED5B972B4E81C00000DBFB /* Sources */,
 				13ED5B982B4E81C00000DBFB /* Frameworks */,
 				13ED5B992B4E81C00000DBFB /* Resources */,
+				844A06664CE451D73DBEFB7B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,19 +304,79 @@
 				13ED5BAB2B4E81C20000DBFB /* LaunchScreen.storyboard in Resources */,
 				13ED5BA82B4E81C20000DBFB /* Assets.xcassets in Resources */,
 				13ED5BA62B4E81C00000DBFB /* Main.storyboard in Resources */,
+				13ED5BBD2B4E83980000DBFB /* MainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2D08038E7D5BFAEB980B9AEE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Animal App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		844A06664CE451D73DBEFB7B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Animal App/Pods-Animal App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Animal App/Pods-Animal App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Animal App/Pods-Animal App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		13ED5B972B4E81C00000DBFB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13ED5BCC2B4E8D850000DBFB /* ImageSrc.swift in Sources */,
+				13ED5BE22B50CD650000DBFB /* ListAnimalModule.swift in Sources */,
+				13ED5BD32B4E8E620000DBFB /* Extension+UITableView.swift in Sources */,
+				13ED5BCB2B4E8D850000DBFB /* AnimalCharacteristics.swift in Sources */,
 				13ED5BA32B4E81C00000DBFB /* ViewController.swift in Sources */,
+				13ED5BBF2B4E84420000DBFB /* APIService.swift in Sources */,
 				13ED5B9F2B4E81C00000DBFB /* AppDelegate.swift in Sources */,
+				13ED5BCF2B4E8D850000DBFB /* AnimalTaxonomy.swift in Sources */,
+				13ED5BCD2B4E8D850000DBFB /* ImageBaseModel.swift in Sources */,
+				13ED5BE02B50CCD60000DBFB /* ListAnimalRouter.swift in Sources */,
 				13ED5BA12B4E81C00000DBFB /* SceneDelegate.swift in Sources */,
+				13ED5BD12B4E8E3B0000DBFB /* Extension+String.swift in Sources */,
+				13ED5BDE2B50CCC80000DBFB /* ListAnimalPresenter.swift in Sources */,
+				13ED5BCE2B4E8D850000DBFB /* AnimalBaseModel.swift in Sources */,
+				13ED5BCA2B4E8D850000DBFB /* ImagePhotos.swift in Sources */,
+				13ED5BDC2B50CB670000DBFB /* ListAnimalInteractor.swift in Sources */,
+				13ED5BBC2B4E83980000DBFB /* ListAnimalViewController.swift in Sources */,
+				13ED5BC12B4E85E40000DBFB /* Constants.swift in Sources */,
+				13ED5BC32B4E87E50000DBFB /* AnimalType.swift in Sources */,
+				13ED5BD52B4E8E940000DBFB /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,7 +439,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -266,7 +502,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -287,6 +523,7 @@
 		};
 		13ED5BB02B4E81C20000DBFB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D89E5319A6DFFE54C048B6D7 /* Pods-Animal App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -300,6 +537,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,6 +553,7 @@
 		};
 		13ED5BB12B4E81C20000DBFB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F42122B53B1D71AFB4F011D /* Pods-Animal App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -328,6 +567,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
