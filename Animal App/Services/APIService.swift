@@ -15,7 +15,7 @@ protocol IAPIService {
     func getImageAnimal(completion: @escaping CompletionHandler<ImageBaseModel>)
 }
 
-class APIService: NSObject {
+class APIService: IAPIService {
     func getAnimalList(completion: @escaping CompletionHandler<AnimalBaseModel>) {
         request(url: SC.ninjasBaseURL, completion: completion)
     }
