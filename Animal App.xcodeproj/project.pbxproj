@@ -39,7 +39,7 @@
 		13ED5BFE2B5136EF0000DBFB /* FavoriteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13ED5BFC2B5136EF0000DBFB /* FavoriteViewController.xib */; };
 		13ED5C002B5136FD0000DBFB /* FavoriteInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13ED5BFF2B5136FD0000DBFB /* FavoriteInteractor.swift */; };
 		13ED5C022B5137070000DBFB /* FavoritePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13ED5C012B5137070000DBFB /* FavoritePresenter.swift */; };
-		13ED5C042B5137110000DBFB /* FavoritePictureRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13ED5C032B5137110000DBFB /* FavoritePictureRouter.swift */; };
+		13ED5C042B5137110000DBFB /* FavoriteRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13ED5C032B5137110000DBFB /* FavoriteRouter.swift */; };
 		6B56F1DD223E491B5C2E722F /* Pods_Animal_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0C7E089A5376D0036DFF754 /* Pods_Animal_App.framework */; };
 /* End PBXBuildFile section */
 
@@ -79,7 +79,7 @@
 		13ED5BFC2B5136EF0000DBFB /* FavoriteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteViewController.xib; sourceTree = "<group>"; };
 		13ED5BFF2B5136FD0000DBFB /* FavoriteInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteInteractor.swift; sourceTree = "<group>"; };
 		13ED5C012B5137070000DBFB /* FavoritePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePresenter.swift; sourceTree = "<group>"; };
-		13ED5C032B5137110000DBFB /* FavoritePictureRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePictureRouter.swift; sourceTree = "<group>"; };
+		13ED5C032B5137110000DBFB /* FavoriteRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteRouter.swift; sourceTree = "<group>"; };
 		D0C7E089A5376D0036DFF754 /* Pods_Animal_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Animal_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D89E5319A6DFFE54C048B6D7 /* Pods-Animal App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Animal App.debug.xcconfig"; path = "Target Support Files/Pods-Animal App/Pods-Animal App.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -334,7 +334,7 @@
 		13ED5BF02B5134D00000DBFB /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				13ED5C032B5137110000DBFB /* FavoritePictureRouter.swift */,
+				13ED5C032B5137110000DBFB /* FavoriteRouter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -490,7 +490,7 @@
 				13ED5BCF2B4E8D850000DBFB /* AnimalTaxonomy.swift in Sources */,
 				13ED5BCD2B4E8D850000DBFB /* ImageBaseModel.swift in Sources */,
 				13ED5BE02B50CCD60000DBFB /* ListOfAnimalRouter.swift in Sources */,
-				13ED5C042B5137110000DBFB /* FavoritePictureRouter.swift in Sources */,
+				13ED5C042B5137110000DBFB /* FavoriteRouter.swift in Sources */,
 				13ED5BA12B4E81C00000DBFB /* SceneDelegate.swift in Sources */,
 				13ED5BF32B5136B60000DBFB /* AnimalPictureViewController.swift in Sources */,
 				13ED5BD12B4E8E3B0000DBFB /* Extension+String.swift in Sources */,

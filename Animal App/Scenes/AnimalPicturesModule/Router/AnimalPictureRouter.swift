@@ -7,8 +7,6 @@
 
 import Foundation
 
-import Foundation
-
 protocol IAnimalPictureRouter: AnyObject {
     func navigateToImageModule()
 }
