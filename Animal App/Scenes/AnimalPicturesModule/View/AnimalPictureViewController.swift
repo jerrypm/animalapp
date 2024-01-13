@@ -18,8 +18,9 @@ class AnimalPictureViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupTable()
         presenter?.viewDidLoad()
+        setupTable()
+        title = presenter?.animalName
     }
 
     private func setupTable() {

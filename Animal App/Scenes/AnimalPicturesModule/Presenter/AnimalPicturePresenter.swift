@@ -11,6 +11,7 @@ protocol IAnimalPicturePresenter: AnyObject {
     var router: IAnimalPictureRouter? { get set }
     var interactor: IAnimalPictureInteractor? { get set }
     var view: IAnimalPictureViewController? { get set }
+    var animalName: String? {get set}
 
     func viewDidLoad()
     func presentImagesData(imagesModel: ImageBaseModel)
@@ -21,14 +22,14 @@ class AnimalPicturePresenter: IAnimalPicturePresenter {
     var interactor: IAnimalPictureInteractor?
     weak var view: IAnimalPictureViewController?
 
-    var param: String?
+    var animalName: String?
 
     init(parameters: [String: Any]) {
-        param = parameters["animal_name"] as? String
+        animalName = parameters["animal_name"] as? String
     }
 
     func viewDidLoad() {
-        interactor?.fetchImageAnimal(animalName: param ?? .empty)
+        interactor?.fetchImageAnimal(animalName: animalName ?? .empty)
     }
     
     func presentImagesData(imagesModel: ImageBaseModel) {

@@ -23,7 +23,11 @@ enum StringConstant: String {
     case dash = "-"
     case dot = "."
     case coma = ","
-    
+
+    case titleListAnimal = "List of Animals"
+
+    // MARK: - Image assets
+
     case emptyImage
 
     var value: String {

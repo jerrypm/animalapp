@@ -19,6 +19,8 @@ class ListOfAnimalViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = SC.titleListAnimal.rawValue
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         setupTable()
         presenter?.viewDidLoad()
     }
