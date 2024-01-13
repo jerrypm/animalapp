@@ -200,7 +200,7 @@
 		13ED5BD62B50C9800000DBFB /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				13ED5BD72B50CA930000DBFB /* ListOfAnimals Module */,
+				13ED5BD72B50CA930000DBFB /* ListOfAnimalsModule */,
 				13ED5BE72B512F420000DBFB /* AnimalPicturesModule */,
 				13ED5BE82B5134800000DBFB /* FavoriteModule */,
 				13ED5BE42B50FD890000DBFB /* Shared */,
@@ -208,7 +208,7 @@
 			path = Scenes;
 			sourceTree = "<group>";
 		};
-		13ED5BD72B50CA930000DBFB /* ListOfAnimals Module */ = {
+		13ED5BD72B50CA930000DBFB /* ListOfAnimalsModule */ = {
 			isa = PBXGroup;
 			children = (
 				13ED5BDA2B50CAEC0000DBFB /* Router */,
@@ -216,7 +216,7 @@
 				13ED5BD92B50CAC80000DBFB /* Presenter */,
 				13ED5BB32B4E81E50000DBFB /* View */,
 			);
-			path = "ListOfAnimals Module";
+			path = ListOfAnimalsModule;
 			sourceTree = "<group>";
 		};
 		13ED5BD82B50CABA0000DBFB /* Interactor */ = {
