@@ -7,31 +7,39 @@
 
 import Alamofire
 import Foundation
+import SwiftyJSON
 
-typealias CompletionHandler<T: Decodable> = (Result<T, Error>) -> ()
+typealias CompletionHandler<T: Decodable> = (Result<T, Error>) -> Void
+typealias CompletionHandlerSwifty = (Swift.Result<JSON, Error>) -> Void
 
 protocol IAPIService {
-    func getAnimalList(completion: @escaping CompletionHandler<AnimalBaseModel>)
-    func getImageAnimal(completion: @escaping CompletionHandler<ImageBaseModel>)
+    func getAnimalList(animal: String, completion: @escaping CompletionHandlerSwifty)
+    func getImageAnimal(animal: String, completion: @escaping CompletionHandlerSwifty)
 }
 
 class APIService: IAPIService {
-    func getAnimalList(completion: @escaping CompletionHandler<AnimalBaseModel>) {
-        request(url: SC.ninjasBaseURL, completion: completion)
+    func getAnimalList(animal: String, completion: @escaping CompletionHandlerSwifty) {
+        request(endpoint: AnimalEndpoint.getAnimalList(animal: animal), completion: completion)
     }
 
-    func getImageAnimal(completion: @escaping CompletionHandler<ImageBaseModel>) {
-        request(url: SC.pexelsbBaseURL, completion: completion)
+    func getImageAnimal(animal: String, completion: @escaping CompletionHandlerSwifty) {
+        request(endpoint: AnimalEndpoint.getImageAnimal(animal: animal), completion: completion)
     }
 
-    private func request<T: Decodable>(url: String, completion: @escaping CompletionHandler<T>) {
-        AF.request(url).responseData { response in
+    private func request<T: IEndpoint>(endpoint: T, completion: @escaping CompletionHandlerSwifty) {
+        AF.request(
+            endpoint.path,
+            method: endpoint.method,
+            parameters: endpoint.parameter,
+            encoding: endpoint.encoding,
+            headers: endpoint.header
+
+        ).responseData { response in
             switch response.result {
             case .success(let data):
                 do {
-                    let jsonDecoder = JSONDecoder()
-                    let decodedData = try jsonDecoder.decode(T.self, from: data)
-                    completion(.success(decodedData))
+                    let json = try JSON(data: data)
+                    completion(.success(json))
                 } catch {
                     print("Error decoding JSON: \(error)")
                     completion(.failure(error))

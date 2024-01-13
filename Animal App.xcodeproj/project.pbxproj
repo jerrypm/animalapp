@@ -40,6 +40,11 @@
 		13ED5C002B5136FD0000DBFB /* FavoriteInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13ED5BFF2B5136FD0000DBFB /* FavoriteInteractor.swift */; };
 		13ED5C022B5137070000DBFB /* FavoritePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13ED5C012B5137070000DBFB /* FavoritePresenter.swift */; };
 		13ED5C042B5137110000DBFB /* FavoriteRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13ED5C032B5137110000DBFB /* FavoriteRouter.swift */; };
+		13ED5C072B518ACF0000DBFB /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13ED5C052B518ACF0000DBFB /* ListTableViewCell.swift */; };
+		13ED5C082B518ACF0000DBFB /* ListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13ED5C062B518ACF0000DBFB /* ListTableViewCell.xib */; };
+		13ED5C2B2B52D0510000DBFB /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13ED5C2A2B52D0510000DBFB /* Endpoint.swift */; };
+		13ED5C322B52E1FE0000DBFB /* PictureTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13ED5C302B52E1FE0000DBFB /* PictureTableViewCell.swift */; };
+		13ED5C332B52E1FE0000DBFB /* PictureTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13ED5C312B52E1FE0000DBFB /* PictureTableViewCell.xib */; };
 		6B56F1DD223E491B5C2E722F /* Pods_Animal_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0C7E089A5376D0036DFF754 /* Pods_Animal_App.framework */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +85,11 @@
 		13ED5BFF2B5136FD0000DBFB /* FavoriteInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteInteractor.swift; sourceTree = "<group>"; };
 		13ED5C012B5137070000DBFB /* FavoritePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePresenter.swift; sourceTree = "<group>"; };
 		13ED5C032B5137110000DBFB /* FavoriteRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteRouter.swift; sourceTree = "<group>"; };
+		13ED5C052B518ACF0000DBFB /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
+		13ED5C062B518ACF0000DBFB /* ListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListTableViewCell.xib; sourceTree = "<group>"; };
+		13ED5C2A2B52D0510000DBFB /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		13ED5C302B52E1FE0000DBFB /* PictureTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureTableViewCell.swift; sourceTree = "<group>"; };
+		13ED5C312B52E1FE0000DBFB /* PictureTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PictureTableViewCell.xib; sourceTree = "<group>"; };
 		D0C7E089A5376D0036DFF754 /* Pods_Animal_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Animal_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D89E5319A6DFFE54C048B6D7 /* Pods-Animal App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Animal App.debug.xcconfig"; path = "Target Support Files/Pods-Animal App/Pods-Animal App.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -145,12 +155,8 @@
 		13ED5BB52B4E81F80000DBFB /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				13ED5BC82B4E8D850000DBFB /* AnimalBaseModel.swift */,
-				13ED5BC52B4E8D840000DBFB /* AnimalCharacteristics.swift */,
-				13ED5BC92B4E8D850000DBFB /* AnimalTaxonomy.swift */,
-				13ED5BC72B4E8D840000DBFB /* ImageBaseModel.swift */,
-				13ED5BC42B4E8D840000DBFB /* ImagePhotos.swift */,
-				13ED5BC62B4E8D840000DBFB /* ImageSrc.swift */,
+				13ED5C2C2B52E0010000DBFB /* AnimalList */,
+				13ED5C2D2B52E02B0000DBFB /* AnimalImage */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -159,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				13ED5BBE2B4E84420000DBFB /* APIService.swift */,
+				13ED5C2A2B52D0510000DBFB /* Endpoint.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -205,8 +212,8 @@
 			isa = PBXGroup;
 			children = (
 				13ED5BDA2B50CAEC0000DBFB /* Router */,
-				13ED5BD92B50CAC80000DBFB /* Presenter */,
 				13ED5BD82B50CABA0000DBFB /* Interactor */,
+				13ED5BD92B50CAC80000DBFB /* Presenter */,
 				13ED5BB32B4E81E50000DBFB /* View */,
 			);
 			path = "ListOfAnimals Module";
@@ -239,6 +246,8 @@
 		13ED5BE32B50E88C0000DBFB /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				13ED5C052B518ACF0000DBFB /* ListTableViewCell.swift */,
+				13ED5C062B518ACF0000DBFB /* ListTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -255,8 +264,8 @@
 			isa = PBXGroup;
 			children = (
 				13ED5BEC2B5134AD0000DBFB /* Router */,
-				13ED5BEB2B5134A60000DBFB /* Presenter */,
 				13ED5BEA2B51349E0000DBFB /* Interactor */,
+				13ED5BEB2B5134A60000DBFB /* Presenter */,
 				13ED5BE92B5134960000DBFB /* View */,
 			);
 			path = AnimalPicturesModule;
@@ -266,8 +275,8 @@
 			isa = PBXGroup;
 			children = (
 				13ED5BF02B5134D00000DBFB /* Router */,
-				13ED5BEF2B5134C30000DBFB /* Presenter */,
 				13ED5BEE2B5134BB0000DBFB /* Interactor */,
+				13ED5BEF2B5134C30000DBFB /* Presenter */,
 				13ED5BED2B5134B40000DBFB /* View */,
 			);
 			path = FavoriteModule;
@@ -276,6 +285,7 @@
 		13ED5BE92B5134960000DBFB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				13ED5C2F2B52E1D10000DBFB /* Cell */,
 				13ED5BF12B5136B60000DBFB /* AnimalPictureViewController.swift */,
 				13ED5BF22B5136B60000DBFB /* AnimalPictureViewController.xib */,
 			);
@@ -309,6 +319,7 @@
 		13ED5BED2B5134B40000DBFB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				13ED5C2E2B52E18F0000DBFB /* Cell */,
 				13ED5BFB2B5136EF0000DBFB /* FavoriteViewController.swift */,
 				13ED5BFC2B5136EF0000DBFB /* FavoriteViewController.xib */,
 			);
@@ -337,6 +348,42 @@
 				13ED5C032B5137110000DBFB /* FavoriteRouter.swift */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		13ED5C2C2B52E0010000DBFB /* AnimalList */ = {
+			isa = PBXGroup;
+			children = (
+				13ED5BC82B4E8D850000DBFB /* AnimalBaseModel.swift */,
+				13ED5BC52B4E8D840000DBFB /* AnimalCharacteristics.swift */,
+				13ED5BC92B4E8D850000DBFB /* AnimalTaxonomy.swift */,
+			);
+			path = AnimalList;
+			sourceTree = "<group>";
+		};
+		13ED5C2D2B52E02B0000DBFB /* AnimalImage */ = {
+			isa = PBXGroup;
+			children = (
+				13ED5BC72B4E8D840000DBFB /* ImageBaseModel.swift */,
+				13ED5BC42B4E8D840000DBFB /* ImagePhotos.swift */,
+				13ED5BC62B4E8D840000DBFB /* ImageSrc.swift */,
+			);
+			path = AnimalImage;
+			sourceTree = "<group>";
+		};
+		13ED5C2E2B52E18F0000DBFB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		13ED5C2F2B52E1D10000DBFB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				13ED5C302B52E1FE0000DBFB /* PictureTableViewCell.swift */,
+				13ED5C312B52E1FE0000DBFB /* PictureTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		16241FF10F6FC87AF999EF97 /* Pods */ = {
@@ -416,12 +463,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13ED5C332B52E1FE0000DBFB /* PictureTableViewCell.xib in Resources */,
 				13ED5BFE2B5136EF0000DBFB /* FavoriteViewController.xib in Resources */,
 				13ED5BAB2B4E81C20000DBFB /* LaunchScreen.storyboard in Resources */,
 				13ED5BA82B4E81C20000DBFB /* Assets.xcassets in Resources */,
 				13ED5BF42B5136B60000DBFB /* AnimalPictureViewController.xib in Resources */,
 				13ED5BA62B4E81C00000DBFB /* Main.storyboard in Resources */,
 				13ED5BBD2B4E83980000DBFB /* ListOfAnimalViewController.xib in Resources */,
+				13ED5C082B518ACF0000DBFB /* ListTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,12 +524,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				13ED5BFA2B5136DE0000DBFB /* AnimalPictureRouter.swift in Sources */,
+				13ED5C2B2B52D0510000DBFB /* Endpoint.swift in Sources */,
 				13ED5C022B5137070000DBFB /* FavoritePresenter.swift in Sources */,
 				13ED5BCC2B4E8D850000DBFB /* ImageSrc.swift in Sources */,
 				13ED5BF82B5136D20000DBFB /* AnimalPicturePresenter.swift in Sources */,
 				13ED5C002B5136FD0000DBFB /* FavoriteInteractor.swift in Sources */,
 				13ED5BD32B4E8E620000DBFB /* Extension+UITableView.swift in Sources */,
 				13ED5BF62B5136C60000DBFB /* AnimalPictureInteractor.swift in Sources */,
+				13ED5C322B52E1FE0000DBFB /* PictureTableViewCell.swift in Sources */,
 				13ED5BCB2B4E8D850000DBFB /* AnimalCharacteristics.swift in Sources */,
 				13ED5BFD2B5136EF0000DBFB /* FavoriteViewController.swift in Sources */,
 				13ED5BE62B50FD9D0000DBFB /* ModuleConfigurator.swift in Sources */,
@@ -495,6 +546,7 @@
 				13ED5BF32B5136B60000DBFB /* AnimalPictureViewController.swift in Sources */,
 				13ED5BD12B4E8E3B0000DBFB /* Extension+String.swift in Sources */,
 				13ED5BDE2B50CCC80000DBFB /* ListOfAnimalPresenter.swift in Sources */,
+				13ED5C072B518ACF0000DBFB /* ListTableViewCell.swift in Sources */,
 				13ED5BCE2B4E8D850000DBFB /* AnimalBaseModel.swift in Sources */,
 				13ED5BCA2B4E8D850000DBFB /* ImagePhotos.swift in Sources */,
 				13ED5BDC2B50CB670000DBFB /* ListOfAnimalInteractor.swift in Sources */,

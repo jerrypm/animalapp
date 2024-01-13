@@ -12,8 +12,9 @@ protocol IListOfAnimalPresenter: AnyObject {
     var interactor: IListOfAnimalInteractor? { get set }
     var view: IListOfAnimalViewController? { get set }
 
-    func presentAnimalList(list: [String])
     func viewDidLoad()
+    func fetchAnimalfromType(animal: AnimalType)
+    func presentAnimalList(list: [AnimalBaseModel])
 }
 
 class ListOfAnimalPresenter: IListOfAnimalPresenter {
@@ -23,10 +24,14 @@ class ListOfAnimalPresenter: IListOfAnimalPresenter {
     weak var view: IListOfAnimalViewController?
 
     func viewDidLoad() {
-        interactor?.getAnimalList()
+        interactor?.fetchAnimalList()
     }
 
-    func presentAnimalList(list: [String]) {
+    func fetchAnimalfromType(animal: AnimalType) {
+        interactor?.fetchAnimalfromType(animal: animal)
+    }
+
+    func presentAnimalList(list: [AnimalBaseModel]) {
         view?.displayAnimalList(list: list)
     }
 }

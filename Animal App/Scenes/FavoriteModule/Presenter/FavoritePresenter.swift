@@ -9,7 +9,7 @@ import Foundation
 
 protocol IFavoritePresenter: AnyObject {
     var router: IFavoriteRouter? { get set }
-    var interactor: IAnimalPictureInteractor? { get set }
+    var interactor: IFavoriteInteractor? { get set }
     var view: IFavoriteViewController? { get set }
 
     func viewDidLoad()
@@ -17,7 +17,7 @@ protocol IFavoritePresenter: AnyObject {
 
 class FavoritePresenter: IFavoritePresenter {
     var router: IFavoriteRouter?
-    var interactor: IAnimalPictureInteractor?
+    var interactor: IFavoriteInteractor?
 
     weak var view: IFavoriteViewController?
 

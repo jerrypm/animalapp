@@ -8,7 +8,7 @@
 import Foundation
 
 protocol IListOfAnimalRouter: AnyObject {
-    func navigateToImageModule()
+    func navigateToImageModule(data: AnimalBaseModel)
 }
 
 class ListOfAnimalRouter: IListOfAnimalRouter {
@@ -18,7 +18,8 @@ class ListOfAnimalRouter: IListOfAnimalRouter {
         self.viewController = viewController
     }
 
-    func navigateToImageModule() {
-        #warning("here")
+    func navigateToImageModule(data: AnimalBaseModel) {
+        let module = ModuleConfigurator.animalImageConfigureModule(param: ["animal_name" : data.name ?? .empty])
+        viewController?.navigationController?.pushViewController(module, animated: true)
     }
 }

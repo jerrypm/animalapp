@@ -8,13 +8,14 @@
 import UIKit
 
 protocol IListOfAnimalViewController: AnyObject {
-    func displayAnimalList(list: [String])
+    func displayAnimalList(list: [AnimalBaseModel])
 }
 
 class ListOfAnimalViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
+
     var presenter: IListOfAnimalPresenter?
-    var animalList = [String]()
+    var animalList = [AnimalBaseModel]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +26,8 @@ class ListOfAnimalViewController: UIViewController {
     private func setupTable() {
         tableView.dataSource = self
         tableView.delegate = self
+        tableView.registerNib(ListTableViewCell.self)
+        tableView.rowHeight = 64
     }
 }
 
@@ -34,14 +37,19 @@ extension ListOfAnimalViewController: UITableViewDelegate, UITableViewDataSource
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
-        cell.textLabel?.text = animalList[indexPath.row]
+        let cell = tableView.dequeueReusableCell(ListTableViewCell.self, for: indexPath)
+        cell.nameLabel.text = animalList[indexPath.row].name
         return cell
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectedAnimal = animalList[indexPath.row]
+        presenter?.router?.navigateToImageModule(data: selectedAnimal)
     }
 }
 
 extension ListOfAnimalViewController: IListOfAnimalViewController {
-    func displayAnimalList(list: [String]) {
+    func displayAnimalList(list: [AnimalBaseModel]) {
         animalList = list
         tableView.reloadData()
     }

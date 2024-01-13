@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "A21F5558-5F79-42FB-8299-492368413ADE"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A62B19A4-624F-490B-AE5A-11E72DCD0BE4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Animal App/Services/APIService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "76"
+            endingLineNumber = "76">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9597F769-4885-4A19-88FD-1E118F780685"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Animal App/Scenes/AnimalPicturesModule/Interactor/AnimalPictureInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "fetchImageAnimal(animalName:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "9597F769-4885-4A19-88FD-1E118F780685 - d8094af67311fd11"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;SwiftyJSON.JSON, Swift.Error&gt;) -&gt; () in Animal_App.AnimalPictureInteractor.fetchImageAnimal(animalName: Swift.String) -&gt; ()"
+                  moduleName = "Animal App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jeripurnamamaulid/Documents/10_Interview_Files/Test%20App/Animal%20App/Animal%20App/Scenes/AnimalPicturesModule/Interactor/AnimalPictureInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "620">
+               </Location>
+               <Location
+                  uuid = "9597F769-4885-4A19-88FD-1E118F780685 - d8094af67311fd11"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;SwiftyJSON.JSON, Swift.Error&gt;) -&gt; () in Animal_App.AnimalPictureInteractor.fetchImageAnimal(animalName: Swift.String) -&gt; ()"
+                  moduleName = "Animal App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jeripurnamamaulid/Documents/10_Interview_Files/Test%20App/Animal%20App/Animal%20App/Scenes/AnimalPicturesModule/Interactor/AnimalPictureInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "556">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

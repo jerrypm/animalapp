@@ -34,14 +34,49 @@ enum ModuleConfigurator {
 
     // MARK: Module Image
 
-    static func animalImageConfigureModule() -> ViewController {
-        let controller = ViewController()
+    static func animalImageConfigureModule(param: [String: Any]) -> AnimalPictureViewController {
+        let controller = AnimalPictureViewController()
+        let router = AnimalPictureRouter(viewController: controller)
+        let presenter = AnimalPicturePresenter(parameters: param)
+        let apiService = APIService()
+
+        let interactor = AnimalPictureInteractor(
+            presenter: presenter,
+            apiService: apiService
+        )
+
+        presenter.view = controller
+        presenter.interactor = interactor
+        presenter.router = router
+
+        controller.presenter = presenter
+        interactor.presenter = presenter
+        router.viewController = controller
+
         return controller
     }
 
     // MARK: Module Favorite
-    static func favoriteConfigureModule() -> ViewController {
-        let controller = ViewController()
+
+    static func favoriteConfigureModule() -> FavoriteViewController {
+        let controller = FavoriteViewController()
+        let router = FavoriteRouter(viewController: controller)
+        let presenter = FavoritePresenter()
+        let apiService = APIService()
+
+        let interactor = FavoriteInteractor(
+            presenter: presenter,
+            apiService: apiService
+        )
+
+        presenter.view = controller
+        presenter.interactor = interactor
+        presenter.router = router
+
+        controller.presenter = presenter
+        interactor.presenter = presenter
+        router.viewController = controller
+
         return controller
     }
 }

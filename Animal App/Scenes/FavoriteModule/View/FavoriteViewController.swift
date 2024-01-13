@@ -10,9 +10,15 @@ import UIKit
 protocol IFavoriteViewController: AnyObject {}
 
 class FavoriteViewController: UIViewController {
+    @IBOutlet weak var tableView: UITableView!
+
+    var presenter: IFavoritePresenter?
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
 }
+
+extension FavoriteViewController: IFavoriteViewController {}

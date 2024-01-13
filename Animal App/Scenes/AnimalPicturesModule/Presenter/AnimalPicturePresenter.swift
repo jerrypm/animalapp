@@ -13,15 +13,27 @@ protocol IAnimalPicturePresenter: AnyObject {
     var view: IAnimalPictureViewController? { get set }
 
     func viewDidLoad()
+    func presentImagesData(imagesModel: ImageBaseModel)
 }
 
 class AnimalPicturePresenter: IAnimalPicturePresenter {
     var router: IAnimalPictureRouter?
     var interactor: IAnimalPictureInteractor?
-
     weak var view: IAnimalPictureViewController?
 
+    var param: String?
+
+    init(parameters: [String: Any]) {
+        param = parameters["animal_name"] as? String
+    }
+
     func viewDidLoad() {
-        #warning("here")
+        interactor?.fetchImageAnimal(animalName: param ?? .empty)
+    }
+    
+    func presentImagesData(imagesModel: ImageBaseModel) {
+        if let photos = imagesModel.photos {
+            view?.displayDataImages(images: photos)
+        }
     }
 }

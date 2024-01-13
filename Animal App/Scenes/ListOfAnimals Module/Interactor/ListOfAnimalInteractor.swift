@@ -8,34 +8,39 @@
 import Foundation
 
 protocol IListOfAnimalInteractor: AnyObject {
-    func getAnimalList()
     func fetchAnimalList()
-    func fetchImageAnimal()
+    func fetchAnimalfromType(animal: AnimalType)
 }
 
 class ListOfAnimalInteractor: IListOfAnimalInteractor {
     private let apiService: IAPIService
     var presenter: IListOfAnimalPresenter
-    var animalList = [String]()
+    var animalList = [AnimalBaseModel]()
 
     init(presenter: IListOfAnimalPresenter, apiService: IAPIService) {
         self.presenter = presenter
         self.apiService = apiService
     }
 
-    func getAnimalList() {
-        for animal in AnimalType.allCases {
-            animalList.append(animal.capitalizedString)
-        }
-
-        presenter.presentAnimalList(list: animalList)
-    }
-
     func fetchAnimalList() {
-        #warning("here")
+        for animal in AnimalType.allCases {
+            fetchAnimalfromType(animal: animal)
+        }
     }
 
-    func fetchImageAnimal() {
-        #warning("here")
+    func fetchAnimalfromType(animal: AnimalType) {
+        apiService.getAnimalList(animal: animal.rawValue) { result in
+            switch result {
+            case .success(let value):
+
+                if let jsonArray = value.array {
+                    let animalModelsFromJSON = jsonArray.map { AnimalBaseModel(json: $0) }
+                    self.animalList.append(contentsOf: animalModelsFromJSON)
+                }
+                self.presenter.presentAnimalList(list: self.animalList)
+            case .failure(let error):
+                print(error)
+            }
+        }
     }
 }

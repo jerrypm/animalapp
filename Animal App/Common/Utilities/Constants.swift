@@ -23,6 +23,8 @@ enum StringConstant: String {
     case dash = "-"
     case dot = "."
     case coma = ","
+    
+    case emptyImage
 
     var value: String {
         return rawValue
