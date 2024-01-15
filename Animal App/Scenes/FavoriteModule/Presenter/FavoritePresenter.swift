@@ -27,6 +27,6 @@ class FavoritePresenter: IFavoritePresenter {
     }
     
     func presentListFavorite(data: [BookmarkEntity]) {
-        //
+        view?.displayAnimalList(data: data)
     }
 }

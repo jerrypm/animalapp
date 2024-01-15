@@ -53,7 +53,9 @@ extension FavoriteViewController: UITableViewDataSource, UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(FavoriteTableViewCell.self, for: indexPath)
-        
+        if let data = dataModel?[indexPath.row] {
+            cell.favoriteImage(data: data)
+        }
         return cell
     }
 }
@@ -61,5 +63,6 @@ extension FavoriteViewController: UITableViewDataSource, UITableViewDelegate {
 extension FavoriteViewController: IFavoriteViewController {
     func displayAnimalList(data: [BookmarkEntity]) {
         dataModel = data
+        tableView.reloadData()
     }
 }

@@ -18,6 +18,10 @@ class FavoriteTableViewCell: UITableViewCell {
     }
     
     func favoriteImage(data: BookmarkEntity) {
-        //
+        titleLabel.text = data.title
+        guard let imageURL = URL(string: data.url ?? .empty) else {
+            return
+        }
+        animalImageView.sd_setImage(with: imageURL, placeholderImage: UIImage(named: SC.emptyImage.value))
     }
 }
