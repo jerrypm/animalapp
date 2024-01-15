@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		138D0E842B54AFB200206FBA /* BookmarkModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 138D0E822B54AFB200206FBA /* BookmarkModel.xcdatamodeld */; };
+		138D0E872B54B08300206FBA /* BookmarkDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138D0E862B54B08300206FBA /* BookmarkDataService.swift */; };
+		138D0E8A2B54B32800206FBA /* BookmarkEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138D0E882B54B32800206FBA /* BookmarkEntity+CoreDataProperties.swift */; };
+		138D0E8B2B54B32800206FBA /* BookmarkEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138D0E892B54B32800206FBA /* BookmarkEntity+CoreDataClass.swift */; };
+		138D0E8E2B54B7FC00206FBA /* FavoriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138D0E8C2B54B7FC00206FBA /* FavoriteTableViewCell.swift */; };
+		138D0E8F2B54B7FC00206FBA /* FavoriteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 138D0E8D2B54B7FC00206FBA /* FavoriteTableViewCell.xib */; };
 		13ED5B9F2B4E81C00000DBFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13ED5B9E2B4E81C00000DBFB /* AppDelegate.swift */; };
 		13ED5BA12B4E81C00000DBFB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13ED5BA02B4E81C00000DBFB /* SceneDelegate.swift */; };
 		13ED5BA32B4E81C00000DBFB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13ED5BA22B4E81C00000DBFB /* ViewController.swift */; };
@@ -50,6 +56,12 @@
 
 /* Begin PBXFileReference section */
 		0F42122B53B1D71AFB4F011D /* Pods-Animal App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Animal App.release.xcconfig"; path = "Target Support Files/Pods-Animal App/Pods-Animal App.release.xcconfig"; sourceTree = "<group>"; };
+		138D0E832B54AFB200206FBA /* BookmarkModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BookmarkModel.xcdatamodel; sourceTree = "<group>"; };
+		138D0E862B54B08300206FBA /* BookmarkDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkDataService.swift; sourceTree = "<group>"; };
+		138D0E882B54B32800206FBA /* BookmarkEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BookmarkEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		138D0E892B54B32800206FBA /* BookmarkEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BookmarkEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		138D0E8C2B54B7FC00206FBA /* FavoriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewCell.swift; sourceTree = "<group>"; };
+		138D0E8D2B54B7FC00206FBA /* FavoriteTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteTableViewCell.xib; sourceTree = "<group>"; };
 		13ED5B9B2B4E81C00000DBFB /* Animal App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Animal App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13ED5B9E2B4E81C00000DBFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13ED5BA02B4E81C00000DBFB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +118,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		138D0E852B54B05800206FBA /* Bookmark */ = {
+			isa = PBXGroup;
+			children = (
+				138D0E882B54B32800206FBA /* BookmarkEntity+CoreDataProperties.swift */,
+				138D0E892B54B32800206FBA /* BookmarkEntity+CoreDataClass.swift */,
+				138D0E822B54AFB200206FBA /* BookmarkModel.xcdatamodeld */,
+			);
+			path = Bookmark;
+			sourceTree = "<group>";
+		};
 		13ED5B922B4E81C00000DBFB = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +177,7 @@
 		13ED5BB52B4E81F80000DBFB /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				138D0E852B54B05800206FBA /* Bookmark */,
 				13ED5C2C2B52E0010000DBFB /* AnimalList */,
 				13ED5C2D2B52E02B0000DBFB /* AnimalImage */,
 			);
@@ -166,6 +189,7 @@
 			children = (
 				13ED5BBE2B4E84420000DBFB /* APIService.swift */,
 				13ED5C2A2B52D0510000DBFB /* Endpoint.swift */,
+				138D0E862B54B08300206FBA /* BookmarkDataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -373,6 +397,8 @@
 		13ED5C2E2B52E18F0000DBFB /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				138D0E8C2B54B7FC00206FBA /* FavoriteTableViewCell.swift */,
+				138D0E8D2B54B7FC00206FBA /* FavoriteTableViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -471,6 +497,7 @@
 				13ED5BA62B4E81C00000DBFB /* Main.storyboard in Resources */,
 				13ED5BBD2B4E83980000DBFB /* ListOfAnimalViewController.xib in Resources */,
 				13ED5C082B518ACF0000DBFB /* ListTableViewCell.xib in Resources */,
+				138D0E8F2B54B7FC00206FBA /* FavoriteTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -532,10 +559,13 @@
 				13ED5BD32B4E8E620000DBFB /* Extension+UITableView.swift in Sources */,
 				13ED5BF62B5136C60000DBFB /* AnimalPictureInteractor.swift in Sources */,
 				13ED5C322B52E1FE0000DBFB /* PictureTableViewCell.swift in Sources */,
+				138D0E8E2B54B7FC00206FBA /* FavoriteTableViewCell.swift in Sources */,
 				13ED5BCB2B4E8D850000DBFB /* AnimalCharacteristics.swift in Sources */,
 				13ED5BFD2B5136EF0000DBFB /* FavoriteViewController.swift in Sources */,
+				138D0E842B54AFB200206FBA /* BookmarkModel.xcdatamodeld in Sources */,
 				13ED5BE62B50FD9D0000DBFB /* ModuleConfigurator.swift in Sources */,
 				13ED5BA32B4E81C00000DBFB /* ViewController.swift in Sources */,
+				138D0E8B2B54B32800206FBA /* BookmarkEntity+CoreDataClass.swift in Sources */,
 				13ED5BBF2B4E84420000DBFB /* APIService.swift in Sources */,
 				13ED5B9F2B4E81C00000DBFB /* AppDelegate.swift in Sources */,
 				13ED5BCF2B4E8D850000DBFB /* AnimalTaxonomy.swift in Sources */,
@@ -543,6 +573,8 @@
 				13ED5BE02B50CCD60000DBFB /* ListOfAnimalRouter.swift in Sources */,
 				13ED5C042B5137110000DBFB /* FavoriteRouter.swift in Sources */,
 				13ED5BA12B4E81C00000DBFB /* SceneDelegate.swift in Sources */,
+				138D0E8A2B54B32800206FBA /* BookmarkEntity+CoreDataProperties.swift in Sources */,
+				138D0E872B54B08300206FBA /* BookmarkDataService.swift in Sources */,
 				13ED5BF32B5136B60000DBFB /* AnimalPictureViewController.swift in Sources */,
 				13ED5BD12B4E8E3B0000DBFB /* Extension+String.swift in Sources */,
 				13ED5BDE2B50CCC80000DBFB /* ListOfAnimalPresenter.swift in Sources */,
@@ -779,6 +811,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		138D0E822B54AFB200206FBA /* BookmarkModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				138D0E832B54AFB200206FBA /* BookmarkModel.xcdatamodel */,
+			);
+			currentVersion = 138D0E832B54AFB200206FBA /* BookmarkModel.xcdatamodel */;
+			path = BookmarkModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 13ED5B932B4E81C00000DBFB /* Project object */;
 }

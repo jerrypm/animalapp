@@ -7,7 +7,9 @@
 
 import Foundation
 
-protocol IFavoriteInteractor: AnyObject {}
+protocol IFavoriteInteractor: AnyObject {
+    func loadLocaldata()
+}
 
 class FavoriteInteractor: IFavoriteInteractor {
     private let apiService: IAPIService
@@ -16,5 +18,10 @@ class FavoriteInteractor: IFavoriteInteractor {
     init(presenter: IFavoritePresenter, apiService: IAPIService) {
         self.presenter = presenter
         self.apiService = apiService
+    }
+
+    func loadLocaldata() {
+        let model = BookmarkDataService.shared.savedEntities
+        presenter.presentListFavorite(data: model)
     }
 }

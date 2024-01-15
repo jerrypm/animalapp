@@ -9,6 +9,7 @@ import Foundation
 
 protocol IListOfAnimalRouter: AnyObject {
     func navigateToImageModule(data: AnimalBaseModel)
+    func navigateToListFavorite()
 }
 
 class ListOfAnimalRouter: IListOfAnimalRouter {
@@ -20,6 +21,11 @@ class ListOfAnimalRouter: IListOfAnimalRouter {
 
     func navigateToImageModule(data: AnimalBaseModel) {
         let module = ModuleConfigurator.animalImageConfigureModule(param: ["animal_name" : data.name ?? .empty])
+        viewController?.navigationController?.pushViewController(module, animated: true)
+    }
+    
+    func navigateToListFavorite() {
+        let module = ModuleConfigurator.favoriteConfigureModule()
         viewController?.navigationController?.pushViewController(module, animated: true)
     }
 }

@@ -21,49 +21,49 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "9597F769-4885-4A19-88FD-1E118F780685"
+            uuid = "49BBF135-4F0F-46E6-9C33-A45B1F29F309"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Animal App/Scenes/AnimalPicturesModule/View/AnimalPictureViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "likePicture(id:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "49E06551-D679-409C-8D72-5A46B06F536D"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Animal App/Scenes/AnimalPicturesModule/Interactor/AnimalPictureInteractor.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
-            landmarkName = "fetchImageAnimal(animalName:)"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "addItemToFavorite(id:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "9597F769-4885-4A19-88FD-1E118F780685 - d8094af67311fd11"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;SwiftyJSON.JSON, Swift.Error&gt;) -&gt; () in Animal_App.AnimalPictureInteractor.fetchImageAnimal(animalName: Swift.String) -&gt; ()"
-                  moduleName = "Animal App"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jeripurnamamaulid/Documents/10_Interview_Files/Test%20App/Animal%20App/Animal%20App/Scenes/AnimalPicturesModule/Interactor/AnimalPictureInteractor.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "34"
-                  endingLineNumber = "34"
-                  offsetFromSymbolStart = "620">
-               </Location>
-               <Location
-                  uuid = "9597F769-4885-4A19-88FD-1E118F780685 - d8094af67311fd11"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;SwiftyJSON.JSON, Swift.Error&gt;) -&gt; () in Animal_App.AnimalPictureInteractor.fetchImageAnimal(animalName: Swift.String) -&gt; ()"
-                  moduleName = "Animal App"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jeripurnamamaulid/Documents/10_Interview_Files/Test%20App/Animal%20App/Animal%20App/Scenes/AnimalPicturesModule/Interactor/AnimalPictureInteractor.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "34"
-                  endingLineNumber = "34"
-                  offsetFromSymbolStart = "556">
-               </Location>
-            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "46999839-02BC-4D8F-86C0-D985FA916156"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Animal App/Services/BookmarkDataService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "getBookmark()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -25,6 +25,7 @@ enum StringConstant: String {
     case coma = ","
 
     case titleListAnimal = "List of Animals"
+    case titleFavorite = "Favorite"
 
     // MARK: - Image assets
 
@@ -33,4 +34,8 @@ enum StringConstant: String {
     var value: String {
         return rawValue
     }
+}
+
+extension Notification.Name {
+    static let bookmarkDataUpdated = Notification.Name("bookmarkDataUpdated")
 }

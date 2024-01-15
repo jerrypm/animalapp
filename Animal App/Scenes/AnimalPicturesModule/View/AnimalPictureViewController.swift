@@ -38,14 +38,19 @@ extension AnimalPictureViewController: UITableViewDataSource, UITableViewDelegat
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(PictureTableViewCell.self, for: indexPath)
-        cell.handleImageUrl(urlString: imageList[indexPath.row].src?.medium ?? .empty)
+        cell.delegate = self
+        cell.handleImageUrl(data: imageList[indexPath.row])
         return cell
     }
 }
 
-extension AnimalPictureViewController: IAnimalPictureViewController {
+extension AnimalPictureViewController: IAnimalPictureViewController, PictureDelegate {
     func displayDataImages(images: [ImagePhotos]) {
         imageList = images
         tableView.reloadData()
+    }
+    
+    func likePicture(id: Int) {
+        presenter?.addToBookmark(id: id)
     }
 }

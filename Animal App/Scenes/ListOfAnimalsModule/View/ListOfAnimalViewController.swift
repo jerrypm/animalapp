@@ -19,8 +19,7 @@ class ListOfAnimalViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = SC.titleListAnimal.rawValue
-        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        setupNavItem()
         setupTable()
         presenter?.viewDidLoad()
     }
@@ -30,6 +29,18 @@ class ListOfAnimalViewController: UIViewController {
         tableView.delegate = self
         tableView.registerNib(ListTableViewCell.self)
         tableView.rowHeight = 64
+    }
+
+    private func setupNavItem() {
+        title = SC.titleListAnimal.rawValue
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        
+        let rightButton = UIBarButtonItem(image: UIImage(systemName: "book.pages"), style: .plain, target: self, action: #selector(handleNavigationRight))
+        navigationItem.rightBarButtonItem = rightButton
+    }
+
+    @objc func handleNavigationRight() {
+        presenter?.router?.navigateToListFavorite()
     }
 }
 

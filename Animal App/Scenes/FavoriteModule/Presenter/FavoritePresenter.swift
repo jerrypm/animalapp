@@ -13,6 +13,7 @@ protocol IFavoritePresenter: AnyObject {
     var view: IFavoriteViewController? { get set }
 
     func viewDidLoad()
+    func presentListFavorite(data: [BookmarkEntity])
 }
 
 class FavoritePresenter: IFavoritePresenter {
@@ -22,6 +23,10 @@ class FavoritePresenter: IFavoritePresenter {
     weak var view: IFavoriteViewController?
 
     func viewDidLoad() {
-        #warning("here")
+        interactor?.loadLocaldata()
+    }
+    
+    func presentListFavorite(data: [BookmarkEntity]) {
+        //
     }
 }

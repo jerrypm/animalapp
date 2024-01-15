@@ -14,6 +14,7 @@ protocol IAnimalPicturePresenter: AnyObject {
     var animalName: String? {get set}
 
     func viewDidLoad()
+    func addToBookmark(id: Int)
     func presentImagesData(imagesModel: ImageBaseModel)
 }
 
@@ -30,6 +31,10 @@ class AnimalPicturePresenter: IAnimalPicturePresenter {
 
     func viewDidLoad() {
         interactor?.fetchImageAnimal(animalName: animalName ?? .empty)
+    }
+    
+    func addToBookmark(id: Int) {
+        interactor?.addItemToFavorite(id: id)
     }
     
     func presentImagesData(imagesModel: ImageBaseModel) {
